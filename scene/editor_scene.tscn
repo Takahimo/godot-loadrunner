@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcskap1dipljn"]
+
+[ext_resource type="Script" path="res://Editor.gd" id="1_x2xke"]
+[ext_resource type="Texture2D" uid="uid://dsxcs2vkx7nor" path="res://tiles/tile_stage.png" id="2_hcih5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l7o0l"]
+texture = ExtResource("2_hcih5")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+9:1/0 = 0
+12:1/0 = 0
+2:2/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_20vvs"]
+sources/0 = SubResource("TileSetAtlasSource_l7o0l")
+
+[node name="EditorScene" type="Node2D"]
+script = ExtResource("1_x2xke")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_20vvs")
+format = 2
